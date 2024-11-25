@@ -1,7 +1,6 @@
 const stockProducts = require('./data.json');
 
-const getUniqueProductsName = () => {
-  // Desenvolva seu código dentro dessa função...
-};
+const getUniqueProductsName = () => stockProducts.map((product) => product.productName);
+console.log(getUniqueProductsName());
 
 module.exports = { getUniqueProductsName };
